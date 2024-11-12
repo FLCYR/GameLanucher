@@ -1,0 +1,160 @@
+
+
+#Setting
+{
+    background-color:white;
+}
+
+
+QLabel
+{
+    font-size:20px;
+    color:black;
+    font-weight:bold;
+}
+
+QCheckBox
+{
+    color:#6C665E;
+    font-size:20px;
+     font-weight:bold;
+}
+
+QRadioButton
+{
+    color:#6C665E;
+    font-size:20px;
+    font-weight:bold;
+}
+
+#labelSetting
+{
+    font-size: 26px;
+    color:black;
+    font-weight:bold;
+
+}
+
+#btnOk
+{
+    background-color: rgba(24,24,24,255);
+    color:white;
+    height:40px;
+    font-size:20px;
+    font-weight:bold;
+}
+#btnOk:hover
+{
+    background-color:rgba(24,24,24,200);
+}
+#btnCancel
+{
+    height:40px;
+    font-size:20px;
+    color:black;
+    font-weight:bold;
+
+}
+#btnCancel:hover
+{
+    background-color:white;
+    border:1px solid gray;
+}
+
+#btnClose
+{
+    border:none;
+    background-image:url(":/imgs/icons/set-close.png");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+#btnClose:hover
+{
+    border:none;
+    background-image:url(":/imgs/icons/set-hover.png");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+#btnLicence,#btnPrivacy
+{
+    min-height:40px;
+    background-color:#F5F5F4;
+    color:#CEAC5C;
+    border:none;
+
+
+}
+QComboBox
+{
+    background-color:#F0EFED;
+    border-radius:3px;
+    height:40px;
+    padding-left:15px;
+    font-size:18px;
+    font-weight:bold;
+}
+QComboBox::drop-down
+{
+
+
+    border:none;
+    width:26px;
+    subcontrol-position:top right;
+    margin-right:10px;
+    margin-left:10px;
+}
+/*下拉按钮*/
+QComboBox::down-arrow
+{
+    image: url(":/imgs/icons/arrow-up.png");
+
+}
+
+/* 点击下拉箭头样式 */
+QComboBox::down-arrow:on
+{
+    image:url(":/imgs/icons/arrow-down.png");
+}
+
+QComboBox QAbstractItemView::item
+{
+    height: 40px;   /* 项的高度 设置pComboBox->setView(new QListView());*/
+    font-size:18px;
+    color:black;
+    padding-left:15px;
+}
+
+QComboBox QAbstractItemView
+{
+    outline: 0px solid gray;   /*选定项的虚框*/
+    border:none;
+    color: black;
+    background-color: white;
+}
+QComboBox QAbstractItemView::item:selected
+{
+    color: black;
+    background-color: white;
+}
+
+QCheckBox::indicator
+{
+    width: 25px; /* 自定义框的宽度 */
+    height: 25px; /* 自定义框的高度 */
+    border:none;
+}
+QLineEdit
+{
+    border: 1px solid #A0A0A0; /* 边框宽度为1px，颜色为#A0A0A0 */
+    border-radius: 3px; /* 边框圆角 */
+    padding-left: 5px; /* 文本距离左边界有5px */
+    background-color: #F2F2F2; /* 背景颜色 */
+    color: #A0A0A0; /* 文本颜色 */
+    selection-background-color: #A0A0A0; /* 选中文本的背景颜色 */
+    selection-color: #F2F2F2; /* 选中文本的颜色 */
+    font-family: "Microsoft YaHei"; /* 文本字体族 */
+    font-size: 10pt; /* 文本字体大小 */
+}
+
+
+

@@ -1,0 +1,23 @@
+
+
+
+#infoFrame
+{
+    background-color:rgba(0,0,0,50);
+    border:2px solid gray;
+}
+#stackedWidget
+{
+    background-color:rgba(0,0,0,0);
+}
+
+QPushButton
+{
+    background-color:rgba(0,0,0,0);
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+
+

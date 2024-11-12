@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imgs/icons/Appico.ico</file>
+        <file>imgs/icons/kujiequ.png</file>
+        <file>imgs/icons/mc-font-logo.png</file>
+        <file>imgs/icons/QQ.png</file>
+        <file>imgs/icons/Wechat.png</file>
+        <file>imgs/icons/WeiBo.png</file>
+        <file>topbar.css</file>
+        <file>imgs/icons/close.png</file>
+        <file>imgs/icons/minium.png</file>
+        <file>imgs/icons/service.png</file>
+        <file>imgs/icons/setting.png</file>
+        <file>imgs/icons/code.png</file>
+        <file>bulletin.css</file>
+        <file>imgs/image/bg1.jpg</file>
+        <file>imgs/image/bg3.jpg</file>
+        <file>imgs/icons/arrowLeft .png</file>
+        <file>imgs/icons/arrowRight.png</file>
+        <file>imgs/icons/set-close.png</file>
+        <file>setting.css</file>
+        <file>imgs/icons/arrow-down.png</file>
+        <file>imgs/icons/arrow-up.png</file>
+        <file>imgs/icons/folder.png</file>
+        <file>imgs/icons/QQCode.jpg</file>
+        <file>imgs/icons/weiboCode.png</file>
+        <file>imgs/icons/wechatCode.png</file>
+        <file>imgs/image/slogan.png</file>
+        <file>imgs/image/logo.png</file>
+        <file>imgs/image/logo-white.png</file>
+        <file>imgs/image/bg2.png</file>
+        <file>imgs/icons/set-hover.png</file>
+        <file>imgs/image/background.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,65 @@
+#labelName
+{
+    min-width:64px;
+    min-height:64px;
+
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+}
+
+#labelLogo
+{
+    min-width:42px;
+    min-height:42px;
+    max-width:42px;
+    max-height:42px;
+}
+#wWechat:hover
+{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #626764, stop:1 #A0AFB4);
+
+}
+
+
+#wKujiequ:hover
+{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #626764, stop:1 #A0AFB4);
+
+}
+
+#wQQ:hover
+{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #626764, stop:1 #A0AFB4);
+
+}
+
+
+#wWeibo:hover
+{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #626764, stop:1 #A0AFB4);
+
+}
+
+QPushButton
+{
+    background-color:rgba(0,0,0,100);
+    border-radius:6px;
+    width:48px;
+    height:48px;
+}
+
+#widget QPushButton
+{
+    background-color:rgba(0,0,0,0);
+    border-radius:6px;
+    width:32px;
+    height:32px;
+}
+
+#widget QPushButton:hover
+{
+    background-color:rgba(104,108,115,200);
+    border-radius:6px;
+}
+
