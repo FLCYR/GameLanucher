@@ -8,7 +8,7 @@ LoadImage::LoadImage(QObject *parent)
 	: QThread(parent)
 {
     QDir dir;
-    QString imgsDir = QApplication::applicationDirPath() + "/imgs/bgs";
+    QString imgsDir = QApplication::applicationDirPath() + "/bgs";
     dir.setCurrent(imgsDir);
     QStringList imgList = dir.entryList(QStringList() << "*.jpg", QDir::Files);
 
