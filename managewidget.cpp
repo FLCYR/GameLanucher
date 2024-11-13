@@ -18,8 +18,8 @@ ManageWidget::ManageWidget(QWidget *parent) :
     QIcon ico(":/imgs/icons/folder.png");
     ui->lineFilepath->addAction(ico, QLineEdit::LeadingPosition);   //QLineEdit Ìí¼ÓÍ¼±ê
 
-    ui->labelVersion->setStyleSheet("color:white;font-size:16px;");
-    ui->labelInfo->setStyleSheet("color:white;font-size:16px");
+    ui->labelVersion->setStyleSheet("color:white;font-size:16px;font-weight:bold;");
+    ui->labelInfo->setStyleSheet("color:white;font-size:16px;font-weight:bold;");
     ui->lineFilepath->setStyleSheet("color:white;height:60px;width:350px;background-color:#373C3E;");
     ui->btnSelect->setStyleSheet("color:black;font-size:20px;height:60px;"
                                  "width:150px;border-radius:3px;background-color:rgba(255,255,255,220);");

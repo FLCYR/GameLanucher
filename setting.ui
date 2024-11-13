@@ -357,12 +357,12 @@
   <customwidget>
    <class>CustomCheckBox</class>
    <extends>QCheckBox</extends>
-   <header>customcheckbox.h</header>
+   <header>CustomCheckBox.h</header>
   </customwidget>
   <customwidget>
    <class>CustomRadioButton</class>
    <extends>QRadioButton</extends>
-   <header>customradiobutton.h</header>
+   <header>CustomRadioButton.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

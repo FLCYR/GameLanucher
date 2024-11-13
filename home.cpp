@@ -1,10 +1,10 @@
- #include "home.h"
+#include "home.h"
 #include "ui_home.h"
-
 #include <QDir>
 #include <QDebug>
 #include <setting.h>
 #include <QStyleOption>
+#include <QScreen>
 Home::Home(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Home)
@@ -12,10 +12,13 @@ Home::Home(QWidget *parent)
     ui->setupUi(this);
     //ÎÞ±ß¿ò´°¿Ú
     this->setWindowFlags(Qt::FramelessWindowHint | windowFlags());
-    this->resize(1600, 960);
-    this->move(300,10);
 
 
+    QScreen* screen = QGuiApplication::primaryScreen();
+
+    QRect sRect = screen->availableGeometry();
+
+    this->resize(sRect.width()/1.2, sRect.height()/1.07);
     /*
      * bulletin: ¹«¸æÀ¸
      * carousel: ÂÖ²¥Í¼
@@ -71,6 +74,8 @@ Home::Home(QWidget *parent)
    // ui->bulletin->hide();
    // ui->carousel->hide();
    // ui->manage->hide();
+
+
 }
 
 
