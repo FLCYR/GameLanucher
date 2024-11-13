@@ -43,8 +43,8 @@ Bulletin::Bulletin(QWidget *parent) :
     QVector<QString>urls;
     urls.append("https://www.kurobbs.com/mc/post/1304494365418856448");
     urls.append("https://www.kurobbs.com/mc/post/1303750756802248704");
-    //活动
 
+    //活动
     QVector<QPair<QString,QString>>activityItems;
     QString s1 = "有奖活动|群星交错|「守岸人」讨论活动启动!";
     QString s1Date = "10-11";
