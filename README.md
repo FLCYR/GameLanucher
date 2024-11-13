@@ -28,13 +28,11 @@ git clone git@github.com:FLCYR/GameLanucher.git
 
 下载后打开pro文件编译，把bgs文件夹放到程序运行目录即可。
 
-
-
 ## 效果图
 
-<img src="file:///C:/Users/16877/Desktop/p1.png" title="" alt="" data-align="center">
+![](https://github.com/FLCYR/GameLanucher/blob/main/screen1.png)
 
-<img src="file:///C:/Users/16877/Desktop/p2.png" title="" alt="" data-align="center">
+![](https://github.com/FLCYR/GameLanucher/blob/main/screen2.png)
 
 ## 其它
 
