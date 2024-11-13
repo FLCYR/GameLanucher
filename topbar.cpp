@@ -233,8 +233,22 @@ void TopBar::showBubbleWidget(int index)
 {
 
 
-    QPoint p =  widgetArrs.at(index)->mapToGlobal(QPoint(0,0));
-    bubbleArrs.at(index)->move(p.x()-bubbleArrs.at(index)->width()/2+widgetArrs.at(index)->width()/2,p.y()+this->height());
+
+
+
+    //联系客服气泡框
+    if(index == widgetArrs.size()-1)
+    {
+         QPoint p = widgetArrs.at(index)->parentWidget()->mapToGlobal(QPoint(0,0));
+         bubbleArrs.at(index)->move(p.x()-bubbleArrs.at(index)->width()/2+widgetArrs.at(index)->width()/2,p.y()+this->height()-2);
+
+    }
+    else
+    {
+        QPoint p = widgetArrs.at(index)->mapToGlobal(QPoint(0,0));
+        bubbleArrs.at(index)->move(p.x()-bubbleArrs.at(index)->width()/2+widgetArrs.at(index)->width()/2,p.y()+this->height());
+
+    }
     bubbleArrs.at(index)->show();
 }
 

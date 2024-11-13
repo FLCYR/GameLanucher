@@ -5,8 +5,7 @@
 #include <QVBoxLayout>
 #include <QLabel>
 #include <QPainter>
-#include <QFontMetrics>
-
+#include <QDesktopServices>
 #include <QStyleOption>
 Bulletin::Bulletin(QWidget *parent) :
     QWidget(parent),
@@ -41,6 +40,9 @@ Bulletin::Bulletin(QWidget *parent) :
     });
 
 
+    QVector<QString>urls;
+    urls.append("https://www.kurobbs.com/mc/post/1304494365418856448");
+    urls.append("https://www.kurobbs.com/mc/post/1303750756802248704");
     //»î¶¯
 
     QVector<QPair<QString,QString>>activityItems;
@@ -79,9 +81,9 @@ Bulletin::Bulletin(QWidget *parent) :
 
 
 
-    addItemContent(activityItems,ui->p1);
-    addItemContent(noticeItems,ui->p2);
-    addItemContent(newsItems,ui->p3);
+    addItemContent(activityItems,urls,ui->p1);
+    addItemContent(noticeItems,urls,ui->p2);
+    addItemContent(newsItems,urls,ui->p3);
 
 
 
@@ -131,14 +133,14 @@ bool Bulletin::eventFilter(QObject*obj,QEvent*e)
 }
 
 
-void Bulletin::addItemContent(QVector<QPair<QString,QString>>content,QWidget*win)
+void Bulletin::addItemContent(QVector<QPair<QString,QString>>content,QVector<QString>urls,QWidget*win)
 {
 
      QVBoxLayout * lay  = new QVBoxLayout();
      int cnt = 0;
      for(auto item:content)
      {
-         InfoWidget*w = new InfoWidget(nullptr,item.first,item.second);
+         InfoWidget*w = new InfoWidget(nullptr,item.first,item.second,urls.at(cnt));
 
          if(cnt%2==0)
          {
@@ -179,9 +181,10 @@ void Bulletin::loadQssFile()
 
 
 
-InfoWidget::InfoWidget(QWidget *parent,QString content,QString date):QWidget(parent)
+InfoWidget::InfoWidget(QWidget *parent,QString content,QString date,QString _url):QWidget(parent)
 {
 
+    url=_url;
     QHBoxLayout * hLayout  = new QHBoxLayout();
     infoLabel = new QLabel(content);
     dateLabel = new QLabel(date);
@@ -275,6 +278,14 @@ void InfoWidget::enterEvent(QEvent*e)
 
 }
 
+void InfoWidget::mousePressEvent(QMouseEvent*e)
+{
+    if(e->button() == Qt::LeftButton)
+    {
+         QDesktopServices::openUrl(QUrl(url));
+    }
+
+}
 
 InfoWidget::~InfoWidget()
 {

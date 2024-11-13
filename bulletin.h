@@ -26,12 +26,13 @@ class InfoWidget:public QWidget
 {
     Q_OBJECT
 public:
-     InfoWidget(QWidget *parent = nullptr,QString content="",QString date="");
+     InfoWidget(QWidget *parent = nullptr,QString content="",QString date="",QString _url="");
     ~InfoWidget();
 protected:
      void paintEvent(QPaintEvent*e);
      void leaveEvent(QEvent*e);
      void enterEvent(QEvent*e);
+     void mousePressEvent(QMouseEvent*e);
 
 
 private:
@@ -39,6 +40,7 @@ private:
      QLabel * infoLabel;
      QLabel * dateLabel;
      BubbleWidget * bw;
+     QString url;
 };
 
 
@@ -53,7 +55,7 @@ public:
     void loadQssFile();
 
 
-    void addItemContent(QVector<QPair<QString,QString>>content,QWidget*win);
+    void addItemContent(QVector<QPair<QString,QString>>content,QVector<QString>urls,QWidget*win);
 
 protected:
     void paintEvent(QPaintEvent*e);
