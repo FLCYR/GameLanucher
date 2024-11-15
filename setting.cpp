@@ -253,8 +253,4 @@ void Setting::paintEvent(QPaintEvent*event)
     cons<<p1<<p2<<p3;
     p.setPen(Qt::black);
     p.drawPolygon(cons);
-
-
-
-
 }

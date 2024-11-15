@@ -1,4 +1,4 @@
-# GameLanucher
+# GameLauncher
 
 ## 前言
 

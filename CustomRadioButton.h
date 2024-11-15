@@ -70,4 +70,5 @@ protected:
         // 使用默认的文本颜色（由样式表和控件状态决定）
         style()->drawItemText(&painter, textRect, Qt::AlignVCenter, option.palette, isEnabled(), option.text);
     }
+
 };

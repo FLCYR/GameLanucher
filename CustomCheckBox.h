@@ -62,6 +62,7 @@ protected:
         }
 
     }
+
 };
 
 #endif // CUSTOMCHECKBOX_H

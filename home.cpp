@@ -74,7 +74,6 @@ Home::Home(QWidget *parent)
 
     this->setStyleSheet("#topBar{background-color:rgba(0,0,0,80);}");
 
-
 }
 
 
