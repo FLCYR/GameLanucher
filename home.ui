@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1600</width>
+    <width>800</width>
     <height>960</height>
    </rect>
   </property>
@@ -42,11 +42,14 @@
     </item>
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,1">
+      <property name="spacing">
+       <number>0</number>
+      </property>
       <property name="topMargin">
        <number>20</number>
       </property>
       <property name="rightMargin">
-       <number>50</number>
+       <number>40</number>
       </property>
       <item>
        <spacer name="horizontalSpacer">
@@ -62,30 +65,34 @@
        </spacer>
       </item>
       <item>
-       <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0">
-        <property name="spacing">
-         <number>20</number>
-        </property>
-        <property name="rightMargin">
-         <number>0</number>
-        </property>
-        <item>
-         <widget class="Bulletin" name="bulletin" native="true"/>
-        </item>
-        <item>
-         <widget class="Carousel" name="carousel" native="true">
-          <property name="minimumSize">
-           <size>
-            <width>560</width>
-            <height>320</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="ManageWidget" name="manage" native="true"/>
-        </item>
-       </layout>
+       <widget class="QWidget" name="contentWidget" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>15</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="Bulletin" name="bulletin" native="true"/>
+         </item>
+         <item>
+          <widget class="Carousel" name="carousel" native="true"/>
+         </item>
+         <item>
+          <widget class="ManageWidget" name="manage" native="true"/>
+         </item>
+        </layout>
+       </widget>
       </item>
      </layout>
     </item>

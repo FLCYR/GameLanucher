@@ -5,6 +5,7 @@
 #include <QDesktopServices>
 #include <QPen>
 #include <QBrush>
+#include <QtMath>
 Setting::Setting(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Setting)

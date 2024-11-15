@@ -18,7 +18,12 @@ Home::Home(QWidget *parent)
 
     QRect sRect = screen->availableGeometry();
 
-    this->resize(sRect.width()/1.2, sRect.height()/1.07);
+    int w = sRect.width()*0.8;
+    int h = w*0.62;
+
+    this->resize(w,h);
+
+    ui->contentWidget->setMaximumWidth(this->width()*0.35);
     /*
      * bulletin: ¹«¸æÀ¸
      * carousel: ÂÖ²¥Í¼
@@ -68,12 +73,6 @@ Home::Home(QWidget *parent)
     });
 
     this->setStyleSheet("#topBar{background-color:rgba(0,0,0,80);}");
-
-   // ui->topBar->hide();
-
-   // ui->bulletin->hide();
-   // ui->carousel->hide();
-   // ui->manage->hide();
 
 
 }
